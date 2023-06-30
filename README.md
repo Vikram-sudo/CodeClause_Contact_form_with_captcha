@@ -2,8 +2,7 @@
 This is a contact form containing basic details with captcha.
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+<head>   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
@@ -11,9 +10,7 @@ This is a contact form containing basic details with captcha.
     <link rel="stylesheet" href="stylenew.css">
     <script src="captcha.js"></script>
     <body onload="generate()">
-    
     <div class ="form">
-        
         <h3>Contact Form</h3>
         <form id="questions" action="#" method="post" name="questions">
             <input type="text" id="name" name="name" placeholder="Name" required><br>
