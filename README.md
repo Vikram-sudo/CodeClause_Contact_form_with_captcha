@@ -3,14 +3,17 @@ This is a contact form containing basic details with captcha.
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Contact Form</title>
     <link rel="stylesheet" href="stylenew.css">
     <script src="captcha.js"></script>
-<body onload="generate()">
+    <body onload="generate()">
+    
     <div class ="form">
+        
         <h3>Contact Form</h3>
         <form id="questions" action="#" method="post" name="questions">
             <input type="text" id="name" name="name" placeholder="Name" required><br>
@@ -30,21 +33,16 @@ This is a contact form containing basic details with captcha.
                    id="submit"
                    placeholder="Captcha code" />
         </div>
-     
         <div class="inline" onclick="generate()">
             <i class="fas fa-sync"></i>
         </div>
-     
         <div id="image"
              class="inline"
              selectable="False">
         </div>
             <p id="key"></p>
- 
-
-            <button type="submit" id="btn" onclick="printmsg()">Submit</button>
+        <button type="submit" id="btn" onclick="printmsg()">Submit</button>
         </form>
     </div>
-    
 </body>
 </html>
