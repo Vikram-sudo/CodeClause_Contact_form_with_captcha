@@ -29,14 +29,14 @@ This is a contact form containing basic details with captcha.
             <input type="text"
                    id="submit"
                    placeholder="Captcha code" />
-        </div>
-        <div class="inline" onclick="generate()">
-            <i class="fas fa-sync"></i>
-        </div>
-        <div id="image"
-             class="inline"
-             selectable="False">
-        </div>
+           </div>
+            <div class="inline" onclick="generate()">
+                <i class="fas fa-sync"></i>
+            </div>
+            <div id="image"
+                 class="inline"
+                 selectable="False">
+            </div>
             <p id="key"></p>
         <button type="submit" id="btn" onclick="printmsg()">Submit</button>
         </form>
