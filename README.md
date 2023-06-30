@@ -1,2 +1,50 @@
 # CodeClause_Contact_form_with_captcha
 This is a contact form containing basic details with captcha.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="stylenew.css">
+    <script src="captcha.js"></script>
+<body onload="generate()">
+    <div class ="form">
+        <h3>Contact Form</h3>
+        <form id="questions" action="#" method="post" name="questions">
+            <input type="text" id="name" name="name" placeholder="Name" required><br>
+           <!---- <label for="name">Name</label><br>-->
+            <input type="email" id="email" name="email" placeholder="Email-Id" required><br>
+           <!---- <label for="email">Email</label><br>-->
+            <input type="text" id="qualification" name="qualification" placeholder="Highest Qualification" required><br>
+           <!---- <label for="Qualification"> Qualification</label><br>-->
+            <input id="number" type="number" name="number" placeholder="Mobile number" required><br>
+            <!---- <label for="number">Number</label><br>-->
+            <input id="city" type="text" name="city" placeholder="City" required><br>
+             <!---- <label for="city">City</label><br>-->
+            <input id="dob" type="date" name="dob" placeholder="Date of birth" required>
+           <!--<label for="dob">Date of Birth</label><br>-->
+           <div id="user-input" class="inline">
+            <input type="text"
+                   id="submit"
+                   placeholder="Captcha code" />
+        </div>
+     
+        <div class="inline" onclick="generate()">
+            <i class="fas fa-sync"></i>
+        </div>
+     
+        <div id="image"
+             class="inline"
+             selectable="False">
+        </div>
+            <p id="key"></p>
+ 
+
+            <button type="submit" id="btn" onclick="printmsg()">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
